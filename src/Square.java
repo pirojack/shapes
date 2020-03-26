@@ -14,11 +14,12 @@ public class Square implements Shapes{
 
     @Override
     public double area() {
-        return width^2;
+        return width*width;
     }
 
     @Override
     public String toString() {
-        return "This is the Object Square []!";
+        return "This is the Object Square!";
     }
+
 }

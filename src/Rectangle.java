@@ -1,14 +1,13 @@
 public class Rectangle implements Shapes{
 
     private final int width, height, colorNum;
+    private String color = COLORS[getColor()];
 
     Rectangle(int width, int height, int colorNum) {
         this.width = width;
         this.height = height;
         this.colorNum = colorNum;
     }
-
-    private String wergw = COLORS[getColor()];
 
     @Override
     public int getColor() {
