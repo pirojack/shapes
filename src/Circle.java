@@ -5,6 +5,7 @@ public class Circle implements Shapes {
     public Circle(int radius, int colorNum) {
         this.radius = radius;
         this.colorNum = colorNum;
+        ;
     }
 
     @Override
