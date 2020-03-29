@@ -27,8 +27,8 @@ public class MagicCircle implements Shapes{
 
     @Override
     public String toString(){
-        return "Object MagicCircle. Every time when it is created" +
-                "it gives a new random Color! ";
+        return "Object MagicCircle. Every time when it is created " +
+        "it gives a new random Color!";
     }
 
 }
