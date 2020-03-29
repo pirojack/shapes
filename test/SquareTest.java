@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 public class SquareTest {
 
-    private static Square squareTest = new Square(3,2);
+    private static Square squareTest = new Square(3, Color.GREEN);
 
     @Test
     public void getColor() throws Exception{
-        assertEquals(2,squareTest.getColor());
+        assertEquals(Color.GREEN.getCode(),squareTest.getColor());
     }
 
     @Test

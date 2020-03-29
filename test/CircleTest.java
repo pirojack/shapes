@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 public class CircleTest {
 
-    private static Circle circleTest = new Circle(4,2);
+    private static Circle circleTest = new Circle(4,Color.BLUE);
 
     @Test
     public void getColor() {
-        assertEquals(2,2);
+        assertEquals( Color.BLUE.getCode(), circleTest.getColor());
     }
 
     @Test

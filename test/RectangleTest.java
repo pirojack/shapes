@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 public class RectangleTest {
 
-    private static Rectangle rectangleTest = new Rectangle(2,4,1);
+    private static Rectangle rectangleTest = new Rectangle(2,4, Color.RED);
 
     @Test
     public void getColor() {
-        assertEquals(1,rectangleTest.getColor());
+        assertEquals(Color.RED.getCode(),rectangleTest.getColor());
     }
 
     @Test
