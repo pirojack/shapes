@@ -1,15 +1,15 @@
 public class Square implements Shapes{
 
-    private final int width, colorNum;
-
-    Square(int width, int colorNum){
+    private final int width;
+    private final Color colEnum;
+    Square(int width, Color colEnum){
         this.width =  width;
-        this.colorNum = colorNum;
+        this.colEnum = colEnum;
     }
 
     @Override
     public int getColor() {
-        return colorNum;
+        return colEnum.getCode();
     }
 
     @Override

@@ -1,6 +1,8 @@
-public interface Shapes extends Color{
+public interface Shapes {
 
     public int getColor();
     public double area();
 
-}
+    }
+
+

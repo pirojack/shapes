@@ -1,16 +1,17 @@
 public class Circle implements Shapes {
 
-    private final int radius, colorNum;
+    private final int radius;
+    private final Color colEnum;
 
-    public Circle(int radius, int colorNum) {
+    public Circle(int radius, Color colEnum) {
         this.radius = radius;
-        this.colorNum = colorNum;
+        this.colEnum = colEnum;
         ;
     }
 
     @Override
     public int getColor() {
-        return colorNum;
+        return colEnum.getCode();
     }
 
     @Override
