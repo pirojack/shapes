@@ -1,16 +1,17 @@
 public class Ellipse implements Shapes{
 
-    private final int colorNum,axisX,axisY;
+    private final int axisX,axisY;
+    private final Color colEnum;
 
-    public Ellipse(int colorNum,int axisX,int axisY) {
-        this.colorNum = colorNum;
+    public Ellipse(Color colEnum,int axisX,int axisY) {
+        this.colEnum = colEnum;
         this.axisX = axisX;
         this.axisY = axisY;
     }
 
     @Override
     public int getColor() {
-        return colorNum;
+        return colEnum.getCode();
     }
 
     @Override
@@ -20,7 +21,7 @@ public class Ellipse implements Shapes{
 
     public String toString(){
         return "Object Ellipse! " +
-                "color: " + colorNum +
+                "color: " + colEnum +
                 " axisX: " + axisX +
                 " axisY: " + axisY;
     }

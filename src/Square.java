@@ -2,6 +2,7 @@ public class Square implements Shapes{
 
     private final int width;
     private final Color colEnum;
+
     Square(int width, Color colEnum){
         this.width =  width;
         this.colEnum = colEnum;

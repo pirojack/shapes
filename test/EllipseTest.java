@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 public class EllipseTest {
 
-    private static Ellipse ellipseTest = new Ellipse(4,56,34);
+    private static Ellipse ellipseTest = new Ellipse(Color.GREEN,56,34);
 
     @Test
     public void getColor() {
-        assertEquals(4,ellipseTest.getColor());
+        assertEquals(Color.GREEN.getCode(),ellipseTest.getColor());
     }
 
     @Test
