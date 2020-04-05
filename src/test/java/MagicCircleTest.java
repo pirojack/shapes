@@ -1,17 +1,17 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 public class MagicCircleTest {
 
-    private static MagicCircle magicCircleTest = new MagicCircle(4);
+    private static MagicCircle magicCircleTest = new MagicCircle(4,Color.BLUE);
 
     @Test
     public void getColor() {
-        assertTrue(magicCircleTest.getColor() == Color.RED.getCode()
-                    || magicCircleTest.getColor() == Color.BLUE.getCode()
-                    || magicCircleTest.getColor() == Color.GREEN.getCode());
+        assertTrue(magicCircleTest.getColor() == Color.BLUE.getCode() );
+        assertNotEquals(magicCircleTest.getColor(), Color.BLUE.getCode());
     }
 
     @Test
@@ -21,6 +21,6 @@ public class MagicCircleTest {
 
     @Test
     public void testToString() {
-        Assert.assertEquals("Object MagicCircle. Every time when it is created it gives a new random Color!",magicCircleTest.toString());
+        Assert.assertEquals("MagicCircle{radius=4, color=BLUE}",magicCircleTest.toString());
     }
 }

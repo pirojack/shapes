@@ -1,8 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class SquareTest {
 
     private static Square squareTest = new Square(3, Color.GREEN);
@@ -20,7 +18,7 @@ public class SquareTest {
     @Test
     public void testToString() throws Exception{
         String toString = squareTest.toString();
-        Assert.assertEquals("This is the Object Square!",squareTest.toString());
+        Assert.assertEquals("Square(width=3, color=1)",squareTest.toString());
 
     }
 }

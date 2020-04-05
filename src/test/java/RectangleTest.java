@@ -1,8 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class RectangleTest {
 
     private static Rectangle rectangleTest = new Rectangle(2,4, Color.RED);
@@ -19,6 +17,6 @@ public class RectangleTest {
 
     @Test
     public void testToString() {
-        Assert.assertEquals("This is the Object Rectangle!",rectangleTest.toString());
+        Assert.assertEquals("Rectangle(width=2, height=4, color=0)",rectangleTest.toString());
     }
 }

@@ -1,27 +1,19 @@
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+@AllArgsConstructor
+@ToString
 public class Ellipse implements Shape {
 
-    private final int axisX,axisY;
-    private final Color colEnum;
+    private final Color color;
+    private final int axisX, axisY;
 
-    public Ellipse(Color colEnum,int axisX,int axisY) {
-        this.colEnum = colEnum;
-        this.axisX = axisX;
-        this.axisY = axisY;
-    }
 
     public int getColor() {
-        return colEnum.getCode();
+        return color.getCode();
     }
 
     public double area() {
-        return axisX*axisY*Math.PI;
+        return axisX * axisY * Math.PI;
     }
-
-    public String toString(){
-        return "Object Ellipse! " +
-                "color: " + colEnum +
-                " axisX: " + axisX +
-                " axisY: " + axisY;
-    }
-
 }

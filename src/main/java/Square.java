@@ -1,24 +1,23 @@
-public class Square implements Shape {
+import lombok.ToString;
+
+@ToString
+public class Square extends Rectangle {
 
     private final int width;
-    private final Color colEnum;
+    private final Color color;
 
-    Square(int width, Color colEnum) {
+    Square(int width, Color color) {
+        super(width, width, color);
         this.width = width;
-        this.colEnum = colEnum;
+        this.color = color;
     }
 
     public int getColor() {
-        return colEnum.getCode();
+        return color.getCode();
     }
 
     public double area() {
         return width * width;
-    }
-
-    @Override
-    public String toString() {
-        return "This is the Object Square!";
     }
 
 }
