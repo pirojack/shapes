@@ -1,22 +1,20 @@
-public class Rectangle implements Shapes{
+public class Rectangle implements Shape {
 
     private final int width, height;
-    private final Color colEnum;
+    private final Color color;
 
-    Rectangle(int width, int height, Color colEnum) {
+    Rectangle(int width, int height, Color color) {
         this.width = width;
         this.height = height;
-        this.colEnum = colEnum;
+        this.color = color;
     }
 
-    @Override
     public int getColor() {
-        return colEnum.getCode();
+        return color.getCode();
     }
 
-    @Override
     public double area() {
-        return width*height;
+        return width * height;
     }
 
     @Override

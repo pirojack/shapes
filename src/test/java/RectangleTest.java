@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,16 +9,16 @@ public class RectangleTest {
 
     @Test
     public void getColor() {
-        assertEquals(Color.RED.getCode(),rectangleTest.getColor());
+        Assert.assertEquals(Color.RED.getCode(),rectangleTest.getColor());
     }
 
     @Test
     public void area() {
-        assertEquals(8.0,rectangleTest.area(),0.01);
+        Assert.assertEquals(8.0,rectangleTest.area(),0.01);
     }
 
     @Test
     public void testToString() {
-        assertEquals("This is the Object Rectangle!",rectangleTest.toString());
+        Assert.assertEquals("This is the Object Rectangle!",rectangleTest.toString());
     }
 }

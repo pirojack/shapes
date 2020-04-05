@@ -1,5 +1,3 @@
-import java.util.Random;
-
 enum Color {
 
     RED(0, "RED"),

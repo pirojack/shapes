@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class MagicCircle implements Shapes{
+public class MagicCircle implements Shape {
 
     private final int radius;
     private Color colEnum = randomColor();
@@ -15,12 +15,10 @@ public class MagicCircle implements Shapes{
         return Color.values()[pick];
     }
 
-    @Override
     public int getColor() {
         return colEnum.getCode();
     }
 
-    @Override
     public double area() {
         return (Math.pow(radius,2))*Math.PI;
     }

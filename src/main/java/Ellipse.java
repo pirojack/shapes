@@ -1,4 +1,4 @@
-public class Ellipse implements Shapes{
+public class Ellipse implements Shape {
 
     private final int axisX,axisY;
     private final Color colEnum;
@@ -9,12 +9,10 @@ public class Ellipse implements Shapes{
         this.axisY = axisY;
     }
 
-    @Override
     public int getColor() {
         return colEnum.getCode();
     }
 
-    @Override
     public double area() {
         return axisX*axisY*Math.PI;
     }

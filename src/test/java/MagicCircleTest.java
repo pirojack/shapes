@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -15,11 +16,11 @@ public class MagicCircleTest {
 
     @Test
     public void area() {
-        assertEquals(50.27,magicCircleTest.area(),0.01);
+        Assert.assertEquals(50.27,magicCircleTest.area(),0.01);
     }
 
     @Test
     public void testToString() {
-        assertEquals("Object MagicCircle. Every time when it is created it gives a new random Color!",magicCircleTest.toString());
+        Assert.assertEquals("Object MagicCircle. Every time when it is created it gives a new random Color!",magicCircleTest.toString());
     }
 }
